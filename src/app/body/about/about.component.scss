@@ -1,0 +1,18 @@
+.about-wrapper {
+  display: flex;
+  margin: 20px 0;
+  .description {
+    margin: auto 0 auto 30px
+  }
+}
+.text-middle {
+  text-align: center;
+}
+
+.profile-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid #666;
+}
+

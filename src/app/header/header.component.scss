@@ -1,0 +1,36 @@
+.header {
+  background-image: url('/../../assets/header.png');
+  background-position: center;
+  height: 100px;
+  text-align: center;
+  display: flex;
+  h1 {
+    margin: auto 20px auto auto;
+    float: right;
+    display: inline-block;
+  }
+}
+
+.pages {
+  list-style: none; // no bullets
+  padding: 0;
+  margin-left: 20px;
+  li {
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 50px;
+    height: 100%;
+    line-height: 4;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgba(94, 86, 211, 0.7);
+    font-weight: bold;
+    margin: 0 5px;
+    color: white;
+    font-size: large;
+  }
+  li:hover {
+    background-color: rgba(94, 86, 211, 1);
+  }
+}

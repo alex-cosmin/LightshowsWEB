@@ -1,0 +1,24 @@
+<div class="slideshow-container">
+  <span class="material-icons arrows" (click)="changeImage(-1)">chevron_left</span>
+  <img [src]="currentImg">
+  <span class="material-icons arrows" (click)="changeImage(1)">chevron_right</span>
+</div>
+<div class="products">
+  <div class="product-card" *ngFor="let product of products;let i = index">
+    <div *ngIf="i % 2 === 0" class="image-container">
+      <img [src]="'assets/slideshow/'+product.img+'.jpg'">
+    </div>
+    <div>
+      <p class="product-description">
+        <span class="product-title" >{{product.name}}</span> <br/>
+        <span class="product-text">
+          {{product.description}}
+      </span>
+        <button [routerLink]="'../product-details/'+product.id" class="product-button">See more</button>
+      </p>
+    </div>
+    <div *ngIf="i % 2 !== 0" class="image-container">
+      <img [src]="'assets/slideshow/'+product.img+'.jpg'">
+    </div>
+  </div>
+</div>
